@@ -53,7 +53,7 @@ function ShoppingOrder() {
               {
                 orderList && orderList.length > 0 ?
                   orderList.map(orderItem => <TableRow>
-                    <TableCell>orderItem?._id</TableCell>
+                    <TableCell>{orderItem?._id}</TableCell>
                     <TableCell>{orderItem?.orderDate.split("T")[0]}</TableCell>
                     <TableCell>
                       <Badge
